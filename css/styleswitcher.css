@@ -1,0 +1,217 @@
+#switcher {
+	background: rgba(255, 255, 255, 0.4); /* Arka planı beyaz ve %40 saydam yapar */
+	backdrop-filter: blur(10px); /* Blur efekti */
+	-webkit-backdrop-filter: blur(10px); /* Safari için gerekli */
+	position: fixed; /* Sabit konumlandırma, ekranın üzerinde kalmasını sağlar */
+	display: none; /* Başlangıçta görünmez */
+	top: 100px; /* Üst kenardan 100 piksel aşağıda */
+	left: 0; /* Sol kenardan 0 piksel uzaklıkta */
+	direction: ltr; /* Yazı yönü soldan sağa */
+	z-index: 11111; /* Diğer öğelerin üzerinde kalmasını sağlar */
+	width: 220px; /* Genişlik 220 piksel */
+	margin-left: 0; /* Sol kenardan boşluk yok */
+	border-radius: 0 5px 5px 0; /* Kenarlarda yuvarlatma yapar */
+	font-family: 'Open Sans', Arial, sans-serif; /* Yazı tipi ailesi */
+	-webkit-box-shadow: 0px 0px 4px 0px rgba(51, 51, 51, 0.2); /* Kutuya hafif bir gölge ekler */
+	box-shadow: 0px 0px 4px 0px rgba(51, 51, 51, 0.2); /* Kutuya hafif bir gölge ekler */
+}
+
+#switcher label {
+	padding-right: 20px; /* Etiketin sağ kenarından 20 piksel boşluk */
+	padding-left: 20px; /* Etiketin sol kenarından 20 piksel boşluk */
+	font-weight: normal; /* Yazı kalınlığını normal yapar */
+	cursor: pointer; /* Fare imlecini el işareti şekline dönüştürür */
+	color: #333; /* Yazı rengi koyu gri */
+	position: relative; /* Göreceli konumlandırma */
+}
+
+#switcher hr {
+	border: 0; /* Kenarlık yok */
+	border-bottom: #ccc 1px solid; /* Alt kenardan gri ince çizgi */
+	margin: 10px 0; /* Üst ve alt kenardan 10 piksel boşluk */
+}
+
+#switcher h4 {
+	padding: 5px 0; /* Üst ve alt kenardan 5 piksel boşluk */
+	border-bottom: #ccc 1px solid; /* Alt kenardan gri ince çizgi */
+	text-transform: uppercase; /* Metin büyük harfe dönüştürülür */
+	font-size: 15px; /* Yazı boyutu 15 piksel */
+	font-weight: bold; /* Yazı kalınlığı kalın */
+	color: #333; /* Yazı rengi koyu gri */
+	margin: 0 0 10px 0; /* Alt kenardan 10 piksel boşluk */
+}
+
+#switcher ul {
+	padding: 0!important; /* Liste öğelerinin iç boşluğunu sıfırlar */
+	margin: 20px 0!important; /* Liste öğelerinin üst ve alt boşluğunu ayarlar */
+}
+
+#switcher ul li {
+	text-transform: uppercase; /* Metinleri büyük harfe dönüştürür */
+	margin-bottom: 0; /* Liste öğeleri arasında alt boşluk olmaz */
+	font-size: 12px; /* Yazı boyutunu 12 piksel yapar */
+	display: inline-block; /* Liste öğelerini yatay olarak düzenler */
+}
+
+#switcher ul li a img {
+	width: 30px; /* Liste öğelerindeki resimlerin genişliğini 30 piksel yapar */
+}
+
+#showSwitcher {
+    background: rgba(255, 255, 255, 0.2); /* Arka planı %20 saydam beyaz yapar */
+    backdrop-filter: blur(50px); /* Blur efekti ekler */
+    -webkit-backdrop-filter: blur(10px); /* Safari için gerekli */
+    z-index: 11111; /* Diğer öğelerin üzerinde kalmasını sağlar */
+    margin-left: 0px; /* Sol kenardan boşluk yok */
+    position: fixed; /* Sabit konumlandırma, ekranın üzerinde kalmasını sağlar */
+    left: 0; /* Sol kenardan 0 piksel uzaklıkta */
+    top: 210px; /* Üst kenardan 210 piksel aşağıda */
+    /* background: #fff; */ /* Beyaz arka planı kaldırın */
+    box-shadow: #ccc 0 0 2px; /* Kutuya hafif bir gölge ekler */
+    border-left: 0; /* Sol kenarda kenarlık yok */
+    font-size: 18px; /* Yazı boyutu 18 piksel */
+    display: block; /* Görünür */
+    -webkit-border-bottom-right-radius: 3px; /* Sağ alt köşeyi yuvarlatır */
+    -webkit-border-top-right-radius: 4px; /* Sağ üst köşeyi yuvarlatır */
+    -moz-border-radius-bottomright: 3px; /* Sağ alt köşeyi yuvarlatır */
+    -moz-border-radius-topright: 4px; /* Sağ üst köşeyi yuvarlatır */
+    border-bottom-right-radius: 3px; /* Sağ alt köşeyi yuvarlatır */
+    border-top-right-radius: 4px; /* Sağ üst köşeyi yuvarlatır */
+    padding: 10px 16px 10px 14px; /* İç dolguyu ayarlar */
+    cursor: pointer; /* Fare imleci el işareti şekline dönüştürür */
+}
+
+#hideSwitcher {
+    cursor:pointer; /* Fare imleci el işareti şekline dönüştürür */
+    line-height:43px; /* Satır yüksekliği 43 piksel */
+    font-size: 38px; /* Yazı boyutu 38 piksel */
+    margin-bottom: 0px; /* Alt kenardan boşluk yok */
+    color:white	; /* Yazı rengi gri tonu */
+    position:absolute; /* Mutlak konumlandırma */
+    width:40px; /* Genişlik 40 piksel */
+    height:40px; /* Yükseklik 40 piksel */
+    top:7px; /* Üst kenardan 7 piksel aşağıda */
+    right:16px; /* Sağ kenardan 16 piksel uzaklıkta */
+    text-align:right; /* Yazıyı sağa hizalar */
+    -webkit-border-bottom-right-radius: 3px; /* Sağ alt köşeyi yuvarlatır */
+    -webkit-border-top-right-radius: 4px; /* Sağ üst köşeyi yuvarlatır */
+    -moz-border-radius-bottomright: 3px; /* Sağ alt köşeyi yuvarlatır */
+    -moz-border-radius-topright: 4px; /* Sağ üst köşeyi yuvarlatır */
+    border-bottom-right-radius: 3px; /* Sağ alt köşeyi yuvarlatır */
+    border-top-right-radius: 4px; /* Sağ üst köşeyi yuvarlatır */
+}
+
+#switcher .content-switcher {
+	padding: 16px; /* İçeriğin etrafına 16 piksel dolgu ekler */
+	overflow: hidden; /* Taşan içeriği gizler */
+}
+
+#switcher a.color {
+	border-radius: 2px; /* Köşeleri yuvarlatır */
+    cursor: pointer; /* Fare imleci el işareti şekline dönüştürür */
+    display: inline-block; /* Blok seviyesinde görüntüler */
+    margin: 4px 2px; /* Kenar boşlukları */
+    width: 30px; /* Genişlik 30 piksel */
+	height: 30px; /* Yükseklik 30 piksel */
+}
+
+#switcher p small {
+	font-size: 10px; /* Küçük metin boyutu 10 piksel */
+}
+
+#switcher p {
+	margin: 15px 0 10px 0; /* Üstten 15 piksel, alttan 10 piksel boşluk */
+	font-size: 12px; /* Metin boyutu 12 piksel */
+	font-weight: 400; /* Yazı kalınlığı normal */
+	color: #2E363F; /* Yazı rengi koyu mavi tonu */
+}
+
+#showSwitcher i {
+	font-size: 25px; /* Sembol boyutu 25 piksel */
+	color: #222; /* Sembol rengi koyu gri */
+}
+
+#switcher .styled-select select {
+	background: #f5f5f5; /* Arka planı açık gri yapar */
+	width: 100%; /* Genişlik %100 yapar */
+	font-size: 13px; /* Yazı boyutu 13 piksel */
+	line-height: 13px; /* Satır yüksekliği 13 piksel */
+	outline: none; /* Odaklandığında çerçeve olmaz */
+ 
+	-webkit-appearance: none; /* Tarayıcı varsayılan görünümü devre dışı bırakılır */
+	cursor: pointer; /* Fare imleci el işareti şekline dönüştürür */
+ }
+ 
+ #switcher p.separator {
+	 margin-bottom: 0; /* Alt kenardan boşluk yok */
+ }
+ 
+ #switcher span.hot {
+	 background: #ff0000; /* Arka planı kırmızı yapar */
+	 color: #fff; /* Yazı rengi beyaz yapar */
+	 padding: 4px; /* Dolgu ekler */
+	 border-radius: 6px; /* Kenarları yuvarlatır */
+	 margin-left: 4px; /* Sol kenardan 4 piksel boşluk */
+	 font-weight: 700; /* Yazı kalınlığı kalın yapar */
+ }
+ 
+ #switcher span.info {
+	 font-size: 11px; /* Yazı boyutu 11 piksel */
+	 display: block; /* Blok seviyesinde görüntüler */
+	 color: #118ce7; /* Yazı rengi mavi tonu */
+	 font-style: italic; /* Yazı stili italik */
+ } 
+
+/** ============ **/
+/* Bu satırı bir bölümü diğerinden ayırmak için kullanıyoruz */
+
+#switcher .switcher_thumb {
+	display: inline-block; /* Değiştirici başlıkların blok seviyesinde görüntülenmesini sağlar */
+	margin: 4px 3px; /* Kenar boşlukları */
+}
+
+#switcher .switcher_thumb.selected {
+	box-shadow: #666 0 0 5px; /* Seçili değiştiricinin etrafına bir gölge ekler */
+}
+
+#switcher .purchase {
+	background-color: #82b440; /* Arka plan rengi yeşil tonu */
+    text-transform: capitalize; /* Metin dönüşümü: Her kelimenin ilk harfi büyük olur */
+    font-size: 14px; /* Yazı boyutu 14 piksel */
+    border-radius: 4px; /* Kenarları yuvarlatır */
+    font-weight: 500; /* Yazı kalınlığı orta */
+    display: block; /* Blok seviyesinde görüntüler */
+    text-align: center; /* Metni merkezler */
+    margin-top: 25px; /* Üstten boşluk ekler */
+}
+
+@media only screen and (max-width: 991px) {
+	#switcher {
+		top: 40px; /* Üstten 40 piksel aşağıda */
+	}
+	#showSwitcher {
+		top: 15px; /* Üstten 15 piksel aşağıda */
+		display: none; /* Görünmez */
+	}
+}
+
+#switcher .dark_switch {
+	margin-top: 5px; /* Üstten 5 piksel boşluk ekler */
+	opacity: 1; /* Opaklık değeri 1 (tam opak) */
+    left: 0; /* Sol kenardan 0 piksel uzaklıkta */
+}
+
+#switcher .purchase {
+	text-transform: uppercase; /* Metin dönüşümü: Tüm metinler büyük harfe dönüştürülür */
+	transform: none !important; /* Önemli özellikle dönüşümü sıfırlar */
+	color: #fff; /* Metin rengi beyaz yapılır */
+	padding: 12px 26px; /* İç dolgu eklenir */
+	border-radius: 30px; /* Kenar yarıçapı 30 piksel yapılır */
+	font-weight: 600; /* Yazı kalınlığı kalın yapılır */
+	text-decoration: none; /* Metin altı çizgisi kaldırılır */
+}
+
+#switcher .purchase i {
+	padding-right: 10px; /* Sağa dolgu eklenir */
+}
+

@@ -1,0 +1,88 @@
+/* Tüm Revealator animasyon sınıfları için geçiş efektini tanımla */
+.revealator-fade,
+.revealator-rotateleft,
+.revealator-rotateright,
+.revealator-slidedown,
+.revealator-slideleft,
+.revealator-slideright,
+.revealator-slideup,
+.revealator-zoomin,
+.revealator-zoomout {
+  transition: all 0.6s; /* Tüm özelliklerde geçiş süresi: 0.6 saniye */
+}
+
+/* Slideup animasyonunu tanımla */
+.revealator-slideup {
+  transform: translate(0, 100px); /* Y ekseni boyunca 100 piksel yukarı hareket et */
+  opacity: 0; /* Opaklık: 0 (görünmez) */
+}
+
+/* Slideup animasyonunun koşullarını belirle */
+.revealator-slideup.revealator-above,
+.revealator-slideup.revealator-partially-below,
+.revealator-slideup.revealator-within {
+  transform: translate(0, 0); /* Sıfır konumunda hareket et (yerine gelme) */
+  opacity: 1; /* Opaklık: 1 (tamamen görünür) */
+}
+
+/* Slidedown animasyonunu tanımla */
+.revealator-slidedown {
+  transform: translate(0, -20px); /* Y ekseni boyunca 20 piksel aşağı hareket et */
+  opacity: 0; /* Opaklık: 0 (görünmez) */
+}
+
+/* Slidedown animasyonunun koşullarını belirle */
+.revealator-slidedown.revealator-above,
+.revealator-slidedown.revealator-partially-above,
+.revealator-slidedown.revealator-within {
+  transform: translate(0, 0); /* Sıfır konumunda hareket et (yerine gelme) */
+  opacity: 1; /* Opaklık: 1 (tamamen görünür) */
+}
+
+/* Revealator için gecikme sınıflarını tanımla */
+.revealator-delay1 {
+  transition-delay: 0.1s!important; /* Geçiş gecikmesi: 0.1 saniye */
+}
+
+/* Revealator için gecikme sınıflarının koşullarını belirle */
+.revealator-delay1.revealator-below,
+.revealator-delay1.revealator-partially-below {
+  transition-delay: 0s!important; /* Geçiş gecikmesi: 0 saniye */
+}
+
+/* Diğer gecikme sınıflarını tanımla */
+.revealator-delay2 {
+  transition-delay: 0.2s!important; /* Geçiş gecikmesi: 0.2 saniye */
+}
+
+.revealator-delay3 {
+  transition-delay: 0.3s!important; /* Geçiş gecikmesi: 0.3 saniye */
+}
+
+.revealator-delay4 {
+  transition-delay: 0.4s!important; /* Geçiş gecikmesi: 0.4 saniye */
+}
+
+.revealator-delay5 {
+  transition-delay: 0.5s!important; /* Geçiş gecikmesi: 0.5 saniye */
+}
+
+.revealator-delay6 {
+  transition-delay: 0.6s!important; /* Geçiş gecikmesi: 0.6 saniye */
+}
+
+.revealator-delay7 {
+  transition-delay: 0.7s!important; /* Geçiş gecikmesi: 0.7 saniye */
+}
+
+.revealator-delay8 {
+  transition-delay: 0.8s!important; /* Geçiş gecikmesi: 0.8 saniye */
+}
+
+.revealator-delay9 {
+  transition-delay: 0.9s!important; /* Geçiş gecikmesi: 0.9 saniye */
+}
+
+.revealator-delay10 {
+  transition-delay: 1s!important; /* Geçiş gecikmesi: 1 saniye */
+}
